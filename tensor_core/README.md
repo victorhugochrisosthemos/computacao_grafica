@@ -33,9 +33,14 @@
 - Quais atividades/áreas são beneficiadas pelos Tensor Cores?
   
 <br><br>-->Para treinamento de redes neurais, os processos de Forward Pass (multiplicação de pesos com os inputs) e Backpropagation (atualização dos pesos da rede neurall) são beneficiados pelos formatos numéricos dando mais precisão e menos dependendo do cenário
-<br><br>-->Profissionais da computação gráfica e animação para renderização de seus projetos 3D
+<br><br>-->Profissionais da computação gráfica e animação para renderização de seus projetos 3D. O processo de renderização da técnica Ray Tracing (melhoria da qualidade visual 3D permitindo cenários fotorrealistas) necessita de um poder de processamento considerável, o cálculo da direção dos raios luminosos a 30-60 quadros por segundo em tempo real é inviável em muitos PCs, mas o Tensor Core com uso da técnica IA denoising consegue suportar essa demanda
+<br><br>IA DENOISING: Técnica que usa modelos de aprendizado de máquina para prever e remover imperfeições/ruído de uma imagem, a partir de um número limitado de raios iniciais. Nesse caso, o Tensor Core acelera processos da rede neural de denoising
 <br><br>-->Empresas de automação e engenharia, para [automação e simulações](https://www.nvidia.com/pt-br/autonomous-machines/robotics/) usando Machine Learning
-
+<br><br>-->Hoje (01/03/25) sistemas computacionais de alto desempenho (High-Performance Computing -> HPC), de maneira geral, possuem como parte de sua composição o uso de GPUs da NVIDIA com Tensor Cores. Esses sistemas são utilizados para simulações na área de pesquisa científica ou em cluesters de servidores, por exemplo
 
 <br>
 ## Aplicações e evolução dos Tensor Cores
+- O uso de Tensor Core apareceu pela primeira vez com a arquitetura Volta (V100)
+- Houve melhorias na arquitetura Turing (RTX 20XX) e Ampere (RTX 30XX)
+- Mais melhorias na arquitetura Hopper (H100) e Ada Lovelace (RTX 40XX)
+
