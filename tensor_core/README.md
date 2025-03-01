@@ -30,6 +30,14 @@
 
 - O que são operações MMA e IMMA? Mixed-Precision Matrix Multiply-Accumulate (MMA) e Integer Mixed-Precision Matrix Multiply-Accumulate(IMMA) são etapas de prrocessamento de dados nos Tensor Cores, realizando multiplicação de matrizes com precisão reduzida e utilizando operações FMA, o MMA relativo a precisão mista com ponto flutuante e IMMA referente a precisão mista com inteiros
   
+
+<br>
+
+## Aplicações e evolução dos Tensor Cores
+
+- Tensor Cores foram utilizados pela primeira vez na arquitetura Volta (V100)
+- Houve melhorias nas arquiteturas Turing (RTX 20XX) e Ampere (RTX 30XX)
+- Houve mais melhorias nas arquiteturas Hopper (H100) e Ada Lovelace (RTX 40XX)
 - Quais atividades/áreas são beneficiadas pelos Tensor Cores?
   
 <br><br>-->Para treinamento de redes neurais, os processos de Forward Pass (multiplicação de pesos com os inputs) e Backpropagation (atualização dos pesos da rede neurall) são beneficiados pelos formatos numéricos dando mais precisão e menos dependendo do cenário
@@ -37,9 +45,3 @@
 <br><br>IA DENOISING: Técnica que usa modelos de aprendizado de máquina para prever e remover imperfeições/ruído de uma imagem, a partir de um número limitado de raios iniciais. Nesse caso, o Tensor Core acelera processos da rede neural de denoising
 <br><br>-->Empresas de automação e engenharia, para [automação e simulações](https://www.nvidia.com/pt-br/autonomous-machines/robotics/) usando Machine Learning
 <br><br>-->Hoje (01/03/25) sistemas computacionais de alto desempenho (High-Performance Computing -> HPC), de maneira geral, possuem como parte de sua composição o uso de GPUs da NVIDIA com Tensor Cores. Esses sistemas são utilizados para simulações na área de pesquisa científica ou em cluesters de servidores, por exemplo
-
-<br>
-
-## Aplicações e evolução dos Tensor Cores
-
-- O que é Tensor Core? São regiões de hardwares de computação gráfica (GPUs) da NVIDIA que aceleram a multiplicação de matrizes
