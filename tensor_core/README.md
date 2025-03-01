@@ -39,8 +39,7 @@
 <br><br>-->Hoje (01/03/25) sistemas computacionais de alto desempenho (High-Performance Computing -> HPC), de maneira geral, possuem como parte de sua composição o uso de GPUs da NVIDIA com Tensor Cores. Esses sistemas são utilizados para simulações na área de pesquisa científica ou em cluesters de servidores, por exemplo
 
 <br>
-## Aplicações e evolução dos Tensor Cores
-- O uso de Tensor Core apareceu pela primeira vez com a arquitetura Volta (V100)
-- Houve melhorias na arquitetura Turing (RTX 20XX) e Ampere (RTX 30XX)
-- Mais melhorias na arquitetura Hopper (H100) e Ada Lovelace (RTX 40XX)
 
+## Aplicações e evolução dos Tensor Cores
+
+- O que é Tensor Core? São regiões de hardwares de computação gráfica (GPUs) da NVIDIA que aceleram a multiplicação de matrizes
