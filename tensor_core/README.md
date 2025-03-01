@@ -34,7 +34,7 @@
 
 <br>
 
-- O que são operações MMA e IMMA? Mixed-Precision Matrix Multiply-Accumulate (MMA) e Integer Mixed-Precision Matrix Multiply-Accumulate(IMMA) são etapas de prrocessamento de dados nos Tensor Cores, realizando multiplicação de matrizes com precisão reduzida e utilizando operações FMA, o MMA relativo a precisão mista com ponto flutuante e IMMA referente a precisão mista com inteiros
+- O que são operações MMA e IMMA? Mixed-Precision Matrix Multiply-Accumulate (MMA) e Integer Mixed-Precision Matrix Multiply-Accumulate(IMMA) são etapas de prrocessamento de dados nos Tensor Cores, realizando multiplicação de matrizes com precisão mista, operações FMA e processos paralelizados. O processo MMA é relativo a precisão mista com ponto flutuante e IMMA referente a precisão mista com números inteiros
   
 
 <br>
