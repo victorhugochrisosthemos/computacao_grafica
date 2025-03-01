@@ -39,7 +39,7 @@
 
 <br>
 
-## Aplicações e evolução dos Tensor Cores
+## 2. Aplicações e evolução dos Tensor Cores
 
 - Tensor Cores foram utilizados pela primeira vez na arquitetura Volta (V100)
 <br>
@@ -62,3 +62,7 @@
 <br><br>--> Apple: Com a Neural Engine nos chips A11 Bionic, M1, M2
 <br><br>--> Google: Criou as TPUs (Tensor Processing Units), muito semelhantes com a tecnologia Tensor Core da NVIDIA
 <br><br>--> Huawei: Com unidades de aceleração de IA chamdas Ascend Processors
+
+## 3. Programação com Tensor Cores
+
+## 4. Desempenho, desafios e limitações
