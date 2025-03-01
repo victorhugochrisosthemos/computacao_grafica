@@ -6,10 +6,10 @@
 - O que é Tensor Core? São regiões de hardwares de computação gráfica (GPUs) da NVIDIA que aceleram a multiplicação de matrizes
 - Como é feito a aceleração de multiplização de matrizes?
 
-<br>-->Realiza o processamento dos elementos da matriz em blocos simultaneamente, beneficiando-se do paralismo computacional
-<br>-->As operações matriciais são otimizadas definindo formatos numéricos diferentes. Um exemplo é que se uma GPU normal utiliza precisão FP32 (4 bytes por número) e o GPU da NVIDIA usa FP16(2 bytes por número), o processo irá ocupar metade da memória permitindo processar o dobro de dados no mesmo espaço de tempo
-<br>-->Usa Pipeline de Operações FMA. Fused Multiply-Add (FMA) é uma operação matemática que combina multiplicação e soma em uma única etapa, reduzindo acessos à memória, operações e erros de arredondamento
-<br>-->Registradores e memória possuem alta largura de banda, isso permite que dados intermediários sejam mantidos próximos ao núcleo de processamento e evitam acessos desnecessários a níveis mais baixos da memória da GPU
+<br><br>-->Realiza o processamento dos elementos da matriz em blocos simultaneamente, beneficiando-se do paralismo computacional
+<br><br>-->As operações matriciais são otimizadas definindo formatos numéricos diferentes. Um exemplo é que se uma GPU normal utiliza precisão FP32 (4 bytes por número) e o GPU da NVIDIA usa FP16(2 bytes por número), o processo irá ocupar metade da memória permitindo processar o dobro de dados no mesmo espaço de tempo
+<br><br>-->Usa Pipeline de Operações FMA. Fused Multiply-Add (FMA) é uma operação matemática que combina multiplicação e soma em uma única etapa, reduzindo acessos à memória, operações e erros de arredondamento
+<br><br>-->Registradores e memória possuem alta largura de banda, isso permite que dados intermediários sejam mantidos próximos ao núcleo de processamento e evitam acessos desnecessários a níveis mais baixos da memória da GPU
 
 - Quais são os formatos numéricos suportados?
 
@@ -26,7 +26,7 @@
 
 ![image](https://github.com/user-attachments/assets/64ea0e46-465c-4434-8e94-c1a563bd187b)
 
-
+<br>
 - O que são operações MMA? Mixed-Precision Matrix Multiply-Accumulate (MMA) são etapas de prrocessamento de dados nos Tensor Cores, realizando multiplicação de matrizes com precisão reduzida e utilizando operações FMA
   
 - Quais atividades/áreas são beneficiadas pelos Tensor Cores?
