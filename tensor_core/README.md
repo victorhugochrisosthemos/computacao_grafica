@@ -27,10 +27,15 @@
 ![image](https://github.com/user-attachments/assets/64ea0e46-465c-4434-8e94-c1a563bd187b)
 
 <br>
-- O que são operações MMA? Mixed-Precision Matrix Multiply-Accumulate (MMA) são etapas de prrocessamento de dados nos Tensor Cores, realizando multiplicação de matrizes com precisão reduzida e utilizando operações FMA
+
+- O que são operações MMA e IMMA? Mixed-Precision Matrix Multiply-Accumulate (MMA) e Integer Mixed-Precision Matrix Multiply-Accumulate(IMMA) são etapas de prrocessamento de dados nos Tensor Cores, realizando multiplicação de matrizes com precisão reduzida e utilizando operações FMA, o MMA relativo a precisão mista com ponto flutuante e IMMA referente a precisão mista com inteiros
   
 - Quais atividades/áreas são beneficiadas pelos Tensor Cores?
   
-<br>-->Para treinamento de redes neurais, os processos de Forward Pass (multiplicação de pesos com os inputs) e Backpropagation (atualização dos pesos da rede neurall) são beneficiados pelos formatos numéricos dando mais precisão e menos dependendo do cenário
-<br>-->Profissionais da computação gráfica e animação para renderização de seus projetos 3D
-<br>-->Empresas de automação e engenharia, para [automação e simulações](https://www.nvidia.com/pt-br/autonomous-machines/robotics/) usando Machine Learning
+<br><br>-->Para treinamento de redes neurais, os processos de Forward Pass (multiplicação de pesos com os inputs) e Backpropagation (atualização dos pesos da rede neurall) são beneficiados pelos formatos numéricos dando mais precisão e menos dependendo do cenário
+<br><br>-->Profissionais da computação gráfica e animação para renderização de seus projetos 3D
+<br><br>-->Empresas de automação e engenharia, para [automação e simulações](https://www.nvidia.com/pt-br/autonomous-machines/robotics/) usando Machine Learning
+
+
+<br>
+## Aplicações e evolução dos Tensor Cores
