@@ -1,7 +1,7 @@
 # Tensor Core
 
 - Estudos sobre Tensor Core para apresentação do seminário de Computação Gráfica, avaliação M1.1
-## Arquitetura e funcionamento dos Tensor Cores
+## 1. Arquitetura e funcionamento dos Tensor Cores
 
 - O que é Tensor Core? São regiões de hardwares de computação gráfica (GPUs) da NVIDIA que aceleram a multiplicação de matrizes
 - Como é feito a aceleração de multiplização de matrizes?
@@ -11,9 +11,15 @@
 <br><br>-->Usa Pipeline de Operações FMA. Fused Multiply-Add (FMA) é uma operação matemática que combina multiplicação e soma em uma única etapa, reduzindo acessos à memória, operações e erros de arredondamento
 <br><br>-->Registradores e memória possuem alta largura de banda, isso permite que dados intermediários sejam mantidos próximos ao núcleo de processamento e evitam acessos desnecessários a níveis mais baixos da memória da GPU
 
+![image](https://github.com/user-attachments/assets/d11f3b5e-580f-42df-98e4-27df7c5704a4)
+
+<br><br>
+
+![image](https://github.com/user-attachments/assets/88b7252d-a038-487a-8eb5-2644bf13f599)
+
+<br><br>
+
 - Quais são os formatos numéricos suportados?
-
-
 
   <br>-->FP16: Ponto flutuante de 16 bits
   <br>-->TF32: Ponto flutuante de 32 bits com exponente de 10 bits e mantissa de 8 bits
@@ -36,6 +42,9 @@
 ## Aplicações e evolução dos Tensor Cores
 
 - Tensor Cores foram utilizados pela primeira vez na arquitetura Volta (V100)
+<br>
+![image](https://github.com/user-attachments/assets/0be8de63-a27d-4410-a7c8-9f67d6a4a9a7)
+<br>
 - Houve melhorias nas arquiteturas Turing (RTX 20XX) e Ampere (RTX 30XX)
 - Houve mais melhorias nas arquiteturas Hopper (H100) e Ada Lovelace (RTX 40XX)
 - Quais atividades/áreas são beneficiadas pelos Tensor Cores?
@@ -45,3 +54,11 @@
 <br><br>IA DENOISING: Técnica que usa modelos de aprendizado de máquina para prever e remover imperfeições/ruído de uma imagem, a partir de um número limitado de raios iniciais. Nesse caso, o Tensor Core acelera processos da rede neural de denoising
 <br><br>-->Empresas de automação e engenharia, para [automação e simulações](https://www.nvidia.com/pt-br/autonomous-machines/robotics/) usando Machine Learning
 <br><br>-->Hoje (01/03/25) sistemas computacionais de alto desempenho (High-Performance Computing -> HPC), de maneira geral, possuem como parte de sua composição o uso de GPUs da NVIDIA com Tensor Cores. Esses sistemas são utilizados para simulações na área de pesquisa científica ou em cluesters de servidores, por exemplo
+
+- Outras empresas também possuem tecnologias semelhantes
+
+<br>--> AMD: Linhas RDNA e CDNA de GPUs com os chamados Matrix Cores
+<br><br>--> Intel: Com tecnologia semelhante na arquitetura Xe
+<br><br>--> Apple: Com a Neural Engine nos chips A11 Bionic, M1, M2
+<br><br>--> Google: Criou as TPUs (Tensor Processing Units), muito semelhantes com a tecnologia Tensor Core da NVIDIA
+<br><br>--> Huawei: Com unidades de aceleração de IA chamdas Ascend Processors
