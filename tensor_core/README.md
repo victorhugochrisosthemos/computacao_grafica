@@ -17,7 +17,7 @@
 <br><br>
 
 ![image](https://github.com/user-attachments/assets/88b7252d-a038-487a-8eb5-2644bf13f599)
-<br>**Funcionamento da técnica FMA**
+<br>**Multiplicação de matrizes com precisão mista**
 <br><br>
 
 - Quais são os formatos numéricos suportados?
