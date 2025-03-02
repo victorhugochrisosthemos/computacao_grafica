@@ -12,11 +12,12 @@
 <br><br>-->Registradores e memória possuem alta largura de banda, isso permite que dados intermediários sejam mantidos próximos ao núcleo de processamento e evitam acessos desnecessários a níveis mais baixos da memória da GPU
 
 ![image](https://github.com/user-attachments/assets/d11f3b5e-580f-42df-98e4-27df7c5704a4)
+Arquitetura do Tensor Core
 
 <br><br>
 
 ![image](https://github.com/user-attachments/assets/88b7252d-a038-487a-8eb5-2644bf13f599)
-
+Funcionamento da técnica FMA
 <br><br>
 
 - Quais são os formatos numéricos suportados?
