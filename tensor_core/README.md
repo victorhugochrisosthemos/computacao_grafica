@@ -66,4 +66,16 @@
 
 ## 3. Programação com Tensor Cores
 
+- Como os Tensor Cores são utilizados na programação?
+
+<br>--> De acordo com o que foi destacado anteriormente, os Tensor Cores tem como finalidade principal agilizar multiplicações de matrizes. Para programar essas operações feitas em GPU, é utilizada a arquitetura CUDA, que serve como base para a programação paralela nas GPUs. Essa ferramenta permite acesso direto aos tensor Cores por meio de extensões específicas, como a API CUDA WMMA (Warp Matrix Multiply-Accumulate), que possibilita executar as operações citadas anteriormente nos formatos numéricos suportados.
+<br><br>-->Além de utilizar a arquitetura CUDA diretamente, existem ferramentas que facilitam o uso dos Tensor Cores na programação. Alguns exemplos são:
+- cuDNN => Otimiza operações de redes neurais utilizando dos Tensor Cores automaticamente quando disponíveis no hardware.
+- TensorRT => Aprimora a eficiência de modelos de IA utilizando Tensor Cores para maximizar o desempenho.
+- Frameworks de IA => Fazem o uso do que foi apresentado anteriormente para agilizar operações, geralmente relacionadas com IA ou machine learning, sem a necessidade de entrar em um nível mais baixo de programação. PyTorch e TensorFlow são exemplos.
+
 ## 4. Desempenho, desafios e limitações
+
+#### Referências:
+- https://www.nvidia.com/pt-br/data-center/tensor-cores/
+- 
