@@ -43,9 +43,6 @@
 ## 2. Aplicações e evolução dos Tensor Cores
 
 - Tensor Cores foram utilizados pela primeira vez na arquitetura Volta (V100)
-<br>
-![image](https://github.com/user-attachments/assets/0be8de63-a27d-4410-a7c8-9f67d6a4a9a7)
-<br>
 - Houve melhorias nas arquiteturas Turing (RTX 20XX) e Ampere (RTX 30XX)
 - Houve mais melhorias nas arquiteturas Hopper (H100) e Ada Lovelace (RTX 40XX)
 - Quais atividades/áreas são beneficiadas pelos Tensor Cores?
@@ -88,3 +85,4 @@
 #### Referências:
 - https://www.nvidia.com/pt-br/data-center/tensor-cores/
 - https://developer.nvidia.com/blog/programming-tensor-cores-cuda-9/
+- https://www.nvidia.com/en-us/research/
