@@ -78,4 +78,4 @@
 
 #### Referências:
 - https://www.nvidia.com/pt-br/data-center/tensor-cores/
-- 
+- https://developer.nvidia.com/blog/programming-tensor-cores-cuda-9/
