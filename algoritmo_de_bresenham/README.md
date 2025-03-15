@@ -14,4 +14,4 @@
 
 ## Código gerado
 - 
-- <bold>javax.swing</bold>: Foi utilizado a bilioteca Swing para criar botões de limpar a tela e o botão para encerrar a aplicação (classe JButton)
+- **bold>javax.swing**: Foi utilizado a bilioteca Swing para criar botões de limpar a tela e o botão para encerrar a aplicação (classe JButton)
