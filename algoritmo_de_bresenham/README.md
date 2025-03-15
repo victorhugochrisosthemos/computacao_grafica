@@ -12,6 +12,8 @@
 - Usa um indicador de erro para decidir quando incrementar no eixo y
 - Fica assim até chegar no ponto final da reta
 
-## Código gerado
-- 
-- **bold>javax.swing**: Foi utilizado a bilioteca Swing para criar botões de limpar a tela e o botão para encerrar a aplicação (classe JButton)
+## Bibliotecas usadas
+- **java.awt.event**: Bilioteca 'Abstract Window Tookit', usada para gerenciar layouts, cores e graficos
+- **java.awt.event**: Biblioteca para lifar com eventos do mouse
+- **java.util***: Biblioteca para lidar com estruturas de dados como ArrayList
+- **javax.swing**: Foi utilizado a bilioteca Swing para criar botões de limpar a tela e o botão para encerrar a aplicação (classe JButton)
