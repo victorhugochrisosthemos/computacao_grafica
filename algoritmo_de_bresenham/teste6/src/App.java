@@ -13,6 +13,7 @@ public class App extends JPanel {
     // Posição atual do cursor
     private Point cursorPoint = null;
 
+    //Classe principal, representa a área onde os desenhos serão feitos
     public App() {
         setBackground(Color.WHITE);
 
@@ -34,6 +35,9 @@ public class App extends JPanel {
 
         //Efeito do X na ponto da seta
         addMouseMotionListener(new MouseMotionAdapter() {
+
+            //Esse @Override é usado para definir um comportamento personalizado quando o mouse se move. Ele atualiza a posição do cursor e redesenha o componente
+            //Atualização da posição do cursor
             @Override
             public void mouseMoved(MouseEvent e) {
                 cursorPoint = e.getPoint();
@@ -77,6 +81,8 @@ public class App extends JPanel {
 
         //err -> direção do incremento ou decremento na coordenada
 
+
+        //Usadas para calcular o deslocamento necessário em cada eixo para desenhar a linha
         int dx = Math.abs(x1 - x0);
         int dy = Math.abs(y1 - y0);
 
@@ -104,6 +110,7 @@ public class App extends JPanel {
             //Método fillRect desenha os pixels individualmente
             g.fillRect(x0, y0, 2, 2);
 
+            //Sai do loop quando atinge o ponto final
             if (x0 == x1 && y0 == y1){
                 break;
             };
@@ -134,6 +141,7 @@ public class App extends JPanel {
         JFrame frame = new JFrame("Algoritmo de Bresenham");
         App panel = new App();
 
+        //Criação do painel
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 600);
         frame.add(panel, BorderLayout.CENTER);
