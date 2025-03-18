@@ -11,7 +11,7 @@ public class App extends JPanel {
     private Point startPoint = null;
 
     // Posição atual do cursor
-    private Point cursorPoint = null; 
+    private Point cursorPoint = null;
 
     public App() {
         setBackground(Color.WHITE);
@@ -75,15 +75,33 @@ public class App extends JPanel {
 
         int dx = Math.abs(x1 - x0);
         int dy = Math.abs(y1 - y0);
-        int sx = x0 < x1 ? 1 : -1;
-        int sy = y0 < y1 ? 1 : -1;
+
+        int sx = 0;
+
+        if (x0 < x1){
+            sx = 1;
+        }else{
+            sx = -1;
+        };
+
+        int sy = 0;
+        if (y0 < y1) {
+            sy = 1;
+        }else{
+            sy = -1;
+        };
         int err = dx - dy;
 
         while (true) {
             //Método fillRect desenha os pixels individualmente
             g.fillRect(x0, y0, 2, 2);
-            if (x0 == x1 && y0 == y1) break;
+
+            if (x0 == x1 && y0 == y1){
+                break;
+            };
+
             int e2 = 2 * err;
+
             if (e2 > -dy) {
                 err -= dy;
                 x0 += sx;
