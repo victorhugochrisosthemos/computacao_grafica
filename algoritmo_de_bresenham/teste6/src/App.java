@@ -67,9 +67,9 @@ public class App extends JPanel {
         //x0 e y0 para o ponto inicial
         //x1 e y1 para o ponto final
 
-        //dx e dy -> diferença absoluta entre as coordenadas x ou ydo ponto final e do ponto inicial
+        //dx e dy -> diferença absoluta entre as coordenadas x ou y do ponto final e do ponto inicial
 
-        //sx esy -> direção do incremento ou decremento na coordenada x e y
+        //sx e sy -> direção do incremento ou decremento na coordenada x e y
 
         //err -> direção do incremento ou decremento na coordenada
 
