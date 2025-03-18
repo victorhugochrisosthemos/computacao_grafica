@@ -46,11 +46,15 @@ public class App extends JPanel {
     //Método para desenhar as linhas
     //O objeto Graphics é usado para desenhar os componentes gráficos
     protected void paintComponent(Graphics g) {
+
+        //Sem essa chamada de superclasse, os desenhos anteriores podem não ser apagados corretamente, causando artefatos visuais
         super.paintComponent(g);
-        g.setColor(Color.BLACK);
+
+        g.setColor(Color.GREEN);
+
         for (Line line : lines) {
             //Usa o algoritmo Bresenham para desenhar a linha
-            drawLine(g, line.start.x, line.start.y, line.end.x, line.end.y);
+            desenharLinha(g, line.start.x, line.start.y, line.end.x, line.end.y);
         }
 
         // Desenha um "X" vermelho na posição do cursor
@@ -63,7 +67,7 @@ public class App extends JPanel {
     }
 
     // Implementação do algoritmo Bresenham para desenhar uma linha entre dois pontos
-    private void drawLine(Graphics g, int x0, int y0, int x1, int y1) {
+    private void desenharLinha(Graphics g, int x0, int y0, int x1, int y1) {
         //x0 e y0 para o ponto inicial
         //x1 e y1 para o ponto final
 
@@ -79,8 +83,10 @@ public class App extends JPanel {
         int sx = 0;
 
         if (x0 < x1){
+            //Vai crescer para a direita
             sx = 1;
         }else{
+            //Vai crescer para a esquerda
             sx = -1;
         };
 
@@ -90,6 +96,8 @@ public class App extends JPanel {
         }else{
             sy = -1;
         };
+
+        //O erro (err) é um valor que decide quando o ponto deve mudar de coordenada
         int err = dx - dy;
 
         while (true) {
